@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  
   background: radial-gradient(#8fdadd, #78e3f1);
   -webkit-overflow-y: hidden;
   -moz-overflow-y: hidden;
