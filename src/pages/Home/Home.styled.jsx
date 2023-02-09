@@ -11,8 +11,6 @@ export const HomeTitle = styled.h1`
   margin-top: 20px;
   margin-bottom: 20px;
 
-  color: black;
-
   span {
     color: rgba(10, 13, 197, 0.9);
     text-shadow: 1px 1px 2px white;
@@ -32,12 +30,16 @@ export const HomeText = styled.p`
 
 export const Link = styled(NavLink)`
   padding: 8px 16px;
-
+  display: inline-flex;
   border-radius: 4px;
   text-decoration: none;
   color: black;
   font-weight: 700;
   font-size: 20px;
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
   transition: scale 250ms linear, color 250ms linear, text-shadow 250ms linear;
 
@@ -45,7 +47,22 @@ export const Link = styled(NavLink)`
   &:focus-visible:not(.active) {
     color: rgba(10, 13, 197, 0.9);
     text-shadow: 1px 1px 2px white;
-    scale: 1.1;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: scale(1);
+      color: black;
+    }
+    50% {
+      transform: scale(1.1);
+      color: rgba(10, 13, 197, 0.9);
+      text-shadow: 1px 1px 2px white;
+    }
+    100% {
+      transform: scale(1);
+      color: black;
+    }
   }
 `;
 

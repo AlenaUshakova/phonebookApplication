@@ -9,7 +9,7 @@ export const Loader = () => {
       ariaLabel="vortex-loading"
       wrapperStyle={{ position: 'absolute', top: '45%', left: '45%' }}
       wrapperClass="vortex-wrapper"
-      colors={[' rgba(10, 13, 197, 0.9);', 'rgba(241, 208, 202, 0.3)', 'rgba(10, 13, 197, 0.9);', 'rgba(241, 208, 202, 0.3)', 'rgba(10, 13, 197, 0.9);', 'rgba(241, 208, 202, 0.3)']}
+      colors={[' rgba(10, 13, 197, 0.9)', 'rgba(241, 208, 202, 0.3)', 'rgba(10, 13, 197, 0.9)', 'rgba(241, 208, 202, 0.3)', 'rgba(10, 13, 197, 0.9)', 'rgba(241, 208, 202, 0.3)']}
     />
   );
 };

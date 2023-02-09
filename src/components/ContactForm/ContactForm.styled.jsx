@@ -6,6 +6,14 @@ export const Form = styled.form`
   justify-content: center;
   font-size: medium;
   padding: 50px 40px;
+  span {
+    color: red;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin-top: -10px;
+    opacity: 0;
+  }
 `;
 
 export const FormInput = styled.input`
@@ -13,9 +21,8 @@ export const FormInput = styled.input`
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 20px;
   padding: 8px;
-
+  margin-bottom: 20px;
   font-family: inherit;
   font-size: medium;
   text-align: left;
@@ -44,6 +51,10 @@ export const FormInput = styled.input`
   @media screen and (min-width: 768px) {
     width: 400px;
   }
+
+  :invalid:not(:placeholder-shown) + span {
+    opacity: 1;
+  }
 `;
 
 export const FormBtn = styled.button`
@@ -52,7 +63,7 @@ export const FormBtn = styled.button`
   align-items: center;
   align-self: center;
 
-  margin-top: 16px;
+  margin-top: 32px;
   margin-bottom: 32px;
   margin-left: 8px;
   margin-right: 6px;

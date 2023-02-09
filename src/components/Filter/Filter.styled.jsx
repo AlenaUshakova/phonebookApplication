@@ -31,9 +31,6 @@ export const FilterName = styled.input`
   @media screen and (min-width: 480px) {
     width: 300px;
   }
-  @media screen and (min-width: 768px) {
-    width: 200px;
-  }
   @media screen and (min-width: 1200px) {
     width: 400px;
   }

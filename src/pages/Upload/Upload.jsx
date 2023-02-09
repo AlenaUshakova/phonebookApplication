@@ -86,11 +86,11 @@ const Upload = () => {
             name="number"
             onChange={handleChange}
             value={number}
-            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
             minLength="10"
-            maxLength="17"
+            maxLength="19"
           />
           <UploadFormBtn type="submit">Edit contact </UploadFormBtn>
         </UploadForm>

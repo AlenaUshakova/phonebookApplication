@@ -9,7 +9,6 @@ export const Link = styled(NavLink)`
   border: 1px solid transparent;
   text-decoration: none;
   color: black;
-  font-weight: 500;
 
   transition: text-shadow 250ms linear, box-shadow 250ms linear, scale 250ms linear, border-color 250ms linear, color 250ms linear, background-color 250ms linear;
 
@@ -19,6 +18,7 @@ export const Link = styled(NavLink)`
     background-color: rgb(243, 243, 245);
     box-shadow: 1px 11px 11px -4px rgba(21, 35, 97, 0.47);
   }
+  
   :hover:not(.active),
   :focus-visible:not(.active) {
     color: rgba(86, 88, 241, 0.9);

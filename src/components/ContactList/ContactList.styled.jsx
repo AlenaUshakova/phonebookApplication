@@ -42,7 +42,6 @@ export const ContactsCallBtn = styled.button`
 
   height: 36px;
   width: 71px;
-  margin-left: 8px;
 
   font-size: small;
   border-radius: 5px;
@@ -92,8 +91,13 @@ export const ContactsItem = styled.li`
   align-items: center;
   font-size: large;
   justify-content: space-between;
+  border-bottom: 1px dotted black;
+  padding: 10px 0;
+
   @media screen and (min-width: 480px) {
     display: flex;
+    gap: 20px;
+ 
   }
 `;
 
@@ -103,14 +107,39 @@ export const ContactNotFound = styled.p`
   margin-top: 17px;
 `;
 
-export const ContactsText = styled.p`
+export const ContactsText = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 480px) {
+    align-items: stretch;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: medium;
+  }
+
+  p {
+    margin: 5px;
+  }
+`;
+
+export const NumberText = styled.p`
+  color: rgba(10, 13, 197, 0.9);
+  text-shadow: 1px 1px 2px white;
+  padding-left: 23px;
 `;
 
 export const Wrap = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
+
+  @media screen and (min-width: 480px) {
+    margin: 0;
+  }
 `;

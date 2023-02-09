@@ -10,8 +10,3 @@ export const BackLink = ({ to, children }) => {
     </StyledLink>
   );
 };
-
-BackLink.propTypes = {
-  children: PropTypes.node.isRequired,
-  to: PropTypes.any.isRequired,
-};

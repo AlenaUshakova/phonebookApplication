@@ -21,7 +21,7 @@ export const ContactStart = styled.p`
 `;
 
 export const ContactWrap = styled.div`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
     gap: 50px;

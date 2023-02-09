@@ -16,7 +16,7 @@ const Home = () => {
           <HomeText>To add a new contact</HomeText>
           <TbArrowBigDown size={30} style={{ marginBottom: '20px' }} /> <br />
           <Link to="/contacts">
-            Click here <TbHandClick size={20} />
+            Click here <TbHandClick size={20} style={{ marginLeft: '10px' }} />
           </Link>
         </>
       ) : (
@@ -27,7 +27,7 @@ const Home = () => {
               <HomeText>If you haven't registered yet</HomeText>
               <TbArrowBigDown size={30} style={{ marginBottom: '20px' }} /> <br />
               <Link to="/register">
-                Click here <TbHandClick size={20} />
+                Click here <TbHandClick size={20} style={{ marginLeft: '10px' }} />
               </Link>
             </div>
             <div>
@@ -35,7 +35,7 @@ const Home = () => {
               <HomeText>If you already have an account</HomeText>
               <TbArrowBigDown size={30} style={{ marginBottom: '20px' }} /> <br />
               <Link to="/login">
-                Click here <TbHandClick size={20} />
+                Click here <TbHandClick size={20} style={{ marginLeft: '10px' }} />
               </Link>
             </div>
           </HomeWrap>

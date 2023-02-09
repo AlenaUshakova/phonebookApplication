@@ -57,13 +57,14 @@ export const ContactForm = () => {
           id={nameInputIdSecond}
           type="tel"
           name="number"
-          pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+          pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
-          placeholder="+38 077-777-77-77"
+          placeholder="+38 (077) 777-77-77"
           minLength="10"
-          maxLength="17"
+          maxLength="19"
         />
+        <span>Phone number must have format: +37 (777) 777-77-77</span>
         <FormBtn type="submit">Add contact</FormBtn>
       </Form>
     </div>

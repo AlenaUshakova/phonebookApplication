@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { BsFillTelephoneFill, BsPersonFill } from 'react-icons/bs';
-import { ContactsList, ContactsBtn, ContactsItem, ContactsLink, ContactNotFound, ContactsText, Wrap, ContactsCallBtn } from './ContactList.styled';
+import { ContactsList, ContactsBtn, ContactsItem, ContactsLink, ContactNotFound, ContactsText, Wrap, ContactsCallBtn, NumberText } from './ContactList.styled';
 import { deleteContact } from '../../redux/contacts/contactsOperations';
 
 export const ContactList = () => {
@@ -25,8 +25,11 @@ export const ContactList = () => {
             <ContactsItem key={contact.id}>
               <ContactsText>
                 {' '}
-                <BsPersonFill size={16} style={{ marginRight: '5px', marginLeft: '1px' }} />
-                {contact.name}: {contact.number}
+                <p>
+                  <BsPersonFill size={16} style={{ marginRight: '5px', marginLeft: '1px' }} />
+                  {contact.name}:
+                </p>
+                <NumberText> {contact.number}</NumberText>
               </ContactsText>
               <Wrap>
                 {' '}

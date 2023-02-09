@@ -7,6 +7,7 @@ export const Header = styled.header`
   gap: 12px;
   padding: 8px 0;
   border-bottom: 1px solid black;
+  box-shadow: 4px 20px 15px -11px rgba(21, 35, 97, 0.3);
 
   > nav {
     display: flex;

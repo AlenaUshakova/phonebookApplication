@@ -10,6 +10,7 @@ export const Container = styled.div`
   font-size: 12px;
   text-align: center;
 
+
   @media screen and (min-width: 480px) {
     width: 480px;
     font-size: 15px;
